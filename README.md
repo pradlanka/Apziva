@@ -2,6 +2,7 @@
 
 This repository contains various data science and machine learning projects done for Apziva AI Residency. Each project includes detailed descriptions, data analysis, methodology, and results. Below are the summaries and key information for each project.
 
+---
 ## [Project 1: Happy Customers [fw9kjShd4x6PASAT]](https://github.com/pradlanka/Apziva/tree/main/fw9kjShd4x6PASAT)
 
 ### Introduction/Background
@@ -151,6 +152,6 @@ The primary goal is to predict stock price valuations on a daily basis. Based on
 - Aims to maximize returns, minimize losses, and optimize the holding period.
 - Implemented strategy with ARIMAX and Block LSTM models, achieving average returns of USD 1024 and USD 1051, respectively, from an initial investment of USD 1000 in each company.
 
-
+---
 ## Conclusion
 These projects demonstrate various applications of machine learning and data science techniques in different domains. Each project includes detailed methodologies, results, and visualizations to provide insights and improve decision-making processes.
