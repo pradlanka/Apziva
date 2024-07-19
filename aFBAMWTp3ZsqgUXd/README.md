@@ -1,8 +1,8 @@
 # Potential Talents
-# Background
+## Background
 The goal of this project is to develop a machine learning-powered pipeline to identify and rank potential candidates based on their fitness for a given role. The system should adapt and improve its rankings through supervisory signals provided by starring candidates, allowing the re-ranking of the candidate list based on real-time feedback.
 
-## Data Description
+### Data Description
 The dataset consists of anonymized candidate profiles from our sourcing efforts, each identified by a unique numeric ID. Key attributes include the candidate's job title, geographical location, and number of connections (with 500+ indicating over 500 connections). The target variable is a fitness score, representing the candidate's suitability for the role on a scale from 0 to 1. The dataset also includes keywords relevant to the roles being filled, such as "Aspiring human resources" or "seeking human resources." Data is available [here](https://docs.google.com/spreadsheets/d/117X6i53dKiO7w6kuA1g1TpdTlv1173h_dPlJt5cNNMU/).
 
 | job_title                                                                         | location                              | connections | fit |
@@ -13,7 +13,7 @@ The dataset consists of anonymized candidate profiles from our sourcing efforts,
 | People Development Coordinator at Ryan                                            | Denton, Texas                         | 500+        | NaN |
 | Advisory Board Member at Celal Bayar University                                   | İzmir, Türkiye                        | 500+        | NaN |
 
-# Methodology
+## Methodology
 ### Fit score calculation
 To estimate the fit score, we match or identify similar words between the search term and candidate job title from their profile. Additionally, location information and connections are used to enhance the ranking. Here's the detailed process:
 
@@ -82,5 +82,5 @@ If candidate ID 31 is starred, the updated fit scores and rankings are as follow
 | 23           | Nortia Staffing is seeking Human Resources, Pa...                             | San Jose, California         | 500+        | 0.927448 |
 | 11           | Human Resources Coordinator at InterContinenta...                             | Atlanta, Georgia             | 500+        | 0.894896 |
 
-# Summary
+## Summary
 This project focuses on developing an automated system to rank potential candidates for roles based on their fit scores. Using text processing techniques like tokenization, stemming, and TF-IDF vectorization, we calculate the similarity between candidate job titles and search terms. We enhance these scores by incorporating location and connection information. When a candidate profile is starred, the system updates the reference search vector to increase the relevance of similar candidates, using a weighted sum approach with a parameter alpha = 0.3. This method improves the accuracy of candidate rankings, as demonstrated by updating the fit scores and rankings when a specific candidate is starred. The process ensures that the most suitable candidates are prioritized, streamlining the talent-sourcing process.
