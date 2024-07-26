@@ -90,7 +90,7 @@ Achieve high classification accuracy.
 - **3D CNN**: Achieved 75.9% accuracy.
 - **CNN-LSTM**: Achieved 96.4% accuracy.
 - 
-### Summary
+### Results
 Achieved 98.3% accuracy in predicting flipping actions in single images using the Inception model and 96.4% accuracy in sequences using the CNN-LSTM model.
 
 ---
@@ -148,9 +148,11 @@ The primary goal is to predict stock price valuations on a daily basis. Based on
 - Employed Bollinger Bands and custom buy-hold-sell logic to optimize trading decisions.
 - Bollinger Bands calculated using moving average and standard deviations to identify potential buy and sell signals.
 - Strategy buys stocks when the price crosses the lower Bollinger Band and meets a specified threshold.
-- Sells stocks if the price drops below a set stop-loss level exceeds the upper Bollinger Band with a sufficient margin, or if the holding period exceeds a maximum limit.
+- Sells stocks if the price drops below a set stop-loss level and exceeds the upper Bollinger Band with a sufficient margin or if the holding period exceeds a maximum limit.
 - Aims to maximize returns, minimize losses, and optimize the holding period.
-- Implemented strategy with ARIMAX and Block LSTM models, achieving average returns of USD 1024 and USD 1051, respectively, from an initial investment of USD 1000 in each company.
+
+### Results
+- Implemented strategy with ARIMAX and Block LSTM models, achieving average returns of USD 1024 and USD 1051, respectively, from an initial investment of USD 1000 in each company, i.e., an annualized ROI of 10 and 21%.
 
 ---
 ## Conclusion
